@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/pole_1_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/pole_1_2"
+        android:layout_toLeftOf="@id/pole_1_2"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#AAAAAA"
+        android:text=""
+        android:onClick="przycisk" />
+    <Button
+        android:id="@+id/pole_1_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#AAAAAA"
+        android:text=""
+        android:onClick="przycisk"  />
+    <Button
+        android:id="@+id/pole_1_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/pole_1_1"
+        android:layout_toRightOf="@id/pole_1_2"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#AAAAAA"
+        android:text=""
+        android:onClick="przycisk"/>
+
+    <Button
+        android:id="@+id/pole_2_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/pole_1_1"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/pole_1_1"
+        android:backgroundTint="#AAAAAA"
+        android:text=""
+        android:onClick="przycisk" />
+    <Button
+        android:id="@+id/pole_2_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/pole_2_1"
+        android:layout_alignLeft="@id/pole_1_2"
+        android:backgroundTint="#AAAAAA"
+        android:text=""
+        android:onClick="przycisk" />
+
+    <Button
+        android:id="@+id/pole_2_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/pole_2_2"
+        android:layout_alignLeft="@id/pole_1_3"
+        android:backgroundTint="#AAAAAA"
+        android:text=""
+        android:onClick="przycisk" />
+
+    <Button
+        android:id="@+id/pole_3_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@id/pole_1_1"
+        android:layout_below="@id/pole_2_1"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#AAAAAA"
+        android:text=""
+        android:onClick="przycisk" />
+    <Button
+        android:id="@+id/pole_3_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/pole_3_1"
+        android:layout_alignLeft="@id/pole_2_2"
+        android:backgroundTint="#AAAAAA"
+        android:text=""
+        android:onClick="przycisk" />
+    <Button
+        android:id="@+id/pole_3_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/pole_3_1"
+        android:layout_alignLeft="@id/pole_2_3"
+        android:backgroundTint="#AAAAAA"
+        android:text=""
+        android:onClick="przycisk" />
+    <TextView
+        android:id="@+id/wynik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pole_3_1"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/pole_3_1"
+        android:layout_alignRight="@id/pole_3_3"
+        android:text="Tu pojawi się wynik"
+        android:gravity="center_horizontal" />
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wynik"
+        android:layout_centerHorizontal="true"
+        android:text="Zagraj ponownie"
+        android:onClick="resetuj"/>
+</RelativeLayout>
